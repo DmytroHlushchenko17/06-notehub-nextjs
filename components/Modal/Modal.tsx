@@ -44,6 +44,6 @@ export default function Modal({ children, onClose }: ModalProps) {
     >
       <div className={css.modal}>{children}</div>
     </div>,
-    document.getElementById("root") as HTMLElement
+    document.getElementById("modal-root") as HTMLElement
   );
 }
