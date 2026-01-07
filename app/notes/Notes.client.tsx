@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import css from "./App.module.css";
-import SearchBox from "../SearchBox/SearchBox";
-import Pagination from "../Pagination/Pagination";
+import css from "./page.module.css";
+import SearchBox from "@/components/SearchBox/SearchBox";
+import Pagination from "@/components/Pagination/Pagination";
 import { useDebounce } from "use-debounce";
-import Modal from "../Modal/Modal";
-import NoteForm from "../NoteForm/NoteForm";
-import Loader from "../Loader/Loader";
-import ErrorMessage from "../ErrorMessage/ErrorMessage";
-import { fetchNotes } from "../../services/noteService";
+import Modal from "@/components/Modal/Modal";
+import NoteForm from "@/components/NoteForm/NoteForm";
+import Loader from "@/components/Loader/Loader";
+import ErrorMessage from "@/components/ErrorMessage/ErrorMessage";
+import { fetchNotes } from "@/lib/api";
 import { Toaster } from "react-hot-toast";
 import type { FetchNotesParams, FetchNotesResponse } from "../../types/note";
-import NoteList from "../NoteList/NoteList";
+import NoteList from "@/components/NoteList/NoteList";
 
 const PER_PAGE = 12;
 
