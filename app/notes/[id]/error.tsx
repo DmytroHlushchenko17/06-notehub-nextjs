@@ -9,7 +9,7 @@ export default function Error({ error }: Props) {
   return (
     <div>
       <ErrorMessage />
-      <p>Could not fetch the list of notes. {error.message}</p>
+      <p>Could not fetch the list of notes.{error.message}</p>
     </div>
   );
 }
